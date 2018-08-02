@@ -17,7 +17,7 @@ class Counter extends Component {
 `
 
 const { code } = babel.transform(input, {
-  plugins: [require.resolve('..')]
+  plugins: ['syntax-class-properties', 'syntax-object-rest-spread', 'syntax-jsx', require.resolve('..')]
 })
 
 console.log(input)
